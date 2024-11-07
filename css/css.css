@@ -1,0 +1,51 @@
+/*Fuentes*/
+
+@font-face{
+    font-family: "TrebuchetMS";/*Fuente*/
+    src: url(font/TrebuchetMS.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "BebasNeue";
+    src: url(font/BebasNeue.otf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: "WebSymbolsRegular";
+    src: url(font/websymbols-regular-webfont.eot);
+    src:url(font/websymbols-regular-webfont.eot?#ieflix) format('embedded-opentype') , url(font/websymbols-regular-webfont.woff) format('truetype'), url(font/websymbols-regular-webfont.svg) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    --dark-blue: hsl(233,26%,24%);
+    --lime-green: hsl(136,65%,51%);
+    --bright-cyan: hsl(192,70%,51%);
+    --grayish-blue: hsl(233,8%,62%);
+    --ligh-grayish-blue: hsl(220,16%,96%);
+    --very-light-gray: hsl(0,0%,98%);
+    --white: hsl(0,0%,100%);
+}
+
+/*Estilos*/
+
+*{
+    margin: 0;
+
+}
+
+body{
+    font-family:'Public Sans',sans-serif ;
+}
+
+.container{
+    border: 1px solid red;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
