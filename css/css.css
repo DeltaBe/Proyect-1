@@ -79,6 +79,12 @@ body{
     box-shadow: 0 0 3px #001f;
     z-index : 1000;
     border-radius:6px;
+    display: grid;
+    justify-items: center;
+    gap: 2em;/*espacios de los elementos usando grid*/
+    transition: transform .3s;
+    transform: translateY(-150%);
+    
 
 
 }
