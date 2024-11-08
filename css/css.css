@@ -47,5 +47,38 @@ body{
     border: 1px solid red;
     width: 90%;
     max-width: 1200px;
-    margin: auto;
+    margin: auto;/*centro del elemento*/
+}
+
+.nav{
+    background-color: var(--white);
+    height: 70px;
+    display: flex;/*es un complemento de css y es para que los elementos se pongan en linea*/
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav_img{
+    display: block;
+}
+
+.nav_icon{
+    display: block;
+}
+
+.nav_links{
+    position: fixed;/*se queda fijo en su posicion y su podicion pasa ser la del navegador*/
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 3em 1em;
+    box-shadow: 0 0 3px #001f;
+    z-index : 1000;
+    border-radius:6px;
+
+
 }
