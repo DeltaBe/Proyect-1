@@ -295,7 +295,7 @@ body{
     float: left;
     width: 320px;
     height: 370px;
-    margin: 40px;
+    margin: 70px;
     text-align: center;
     color: black;
     font-family: 'Trebuchet MS';
@@ -309,7 +309,6 @@ body{
 }
 
 #footer h5{
-
     display: block;
     height: 50px;
     letter-spacing: 2px;
@@ -320,6 +319,7 @@ body{
     color: black;
     border-radius: 5px;
     margin-bottom: 15px;
+    background: white;
 }
 
 #footer ul{
@@ -365,4 +365,126 @@ body{
 
 .cta_nav{
     display: none;
+}
+
+@media(min-width:768px){
+    .nav_links{
+        position: unset;
+        transform: unset;
+        margin: 0;
+        border-radius: 0;
+        box-shadow: unset;
+        padding: 0;
+        width: max-content;
+        display: flex;
+        gap: 1em;
+        height: 100%;
+    }
+
+    .nav_link{
+        display: flex;
+        align-items: center;
+        height: 100%;
+        text-decoration: none;
+        color: var(--grayish-blue);
+        position: relative;
+        
+    }
+
+    .nav_link::before{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background-color: var(--lime-green);
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity .3s;
+    }
+
+    .nav_link:hover::before{
+        opacity: 1;
+    }
+
+    /*quito la hamburguesa*/
+    .nav_menu{
+        display: none;
+    }
+
+    /*mostrar el boton*/
+    .cta_nav{
+        display: inline-block;
+    }
+
+    .hero_main{
+        width: 95%;
+        margin-left: 10%;
+        display: flex;
+        flex-direction: row-reverse;
+        height: 500px;
+        align-items: center;
+
+    }
+
+    .hero_background{
+        width: 50%;
+        height: 100%;
+        margin-top: 10px;
+        background-image: url(/images/img-hero.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left center;
+
+        border-radius: 900px;
+   
+    }
+
+    .hero_background::before{
+        left: unset;
+        right: 0;
+        height: 550px;
+        background-position: 50px -45px;
+
+    }
+
+    .hero_texts{
+        width: 40%;
+        padding-bottom: 0;
+        margin: 0 auto;
+        text-align: start;
+    }
+
+    .hero_title{
+        margin: 0;
+    }
+    .easybank_container{
+        text-align: start;
+
+    }
+
+    .easybank_paragraph{
+        width: 550px;
+    }
+    .easybank_services{
+        margin: 0;
+        max-width: unset;
+        grid-template-columns: repeat(4,1fr);/*cada elemento ocupara una columna de 1 fraccion*/
+        gap: 1.5em;
+
+    }
+
+    .easybank_icon{
+        margin-left: unset;
+    }
+
+    .articles_container{
+        text-align: start;
+
+    }
+
+    .articles_content{
+        grid-template-columns: repeat(4,1fr);
+        gap: 1em;
+    }
 }
