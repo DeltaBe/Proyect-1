@@ -72,19 +72,42 @@ body{
     top: 80px;
     left: 0;
     right: 0;
+    /*arriba controlamos las posiciones del fixed*/
     width: 90%;
     margin: 0 auto;
     background-color: #fff;
     padding: 3em 1em;
     box-shadow: 0 0 3px #001f;
-    z-index : 1000;
+    z-index : 1000;/*se coloca arriba del todo*/
     border-radius:6px;
-    display: grid;
-    justify-items: center;
+    display: grid;/*componente que hace que las weas se hagan columna*/
+    justify-items: center;/*mueve los elementos a el centro*/
     gap: 2em;/*espacios de los elementos usando grid*/
     transition: transform .3s;
-    transform: translateY(-150%);
+    transform: translateY(-150%);/*lo trasladamos a una posicion negativa lo que lo hace desaparecer*/
     
 
 
+}
+
+.nav_links:target{
+    transform: translateY(0);
+}
+
+.nav_link{
+    text-decoration: none;
+    color: var(--dark-blue);
+}
+
+.hero_main{
+    max-width: 1200px;
+}
+
+.hero_background{
+    width: 100%;
+    height: 300px;
+    background-image: url(/images/img-hero.png);
+    background-repeat: no-repeat;
+    background-size: 100% 350px;
+    position: relative;
 }
