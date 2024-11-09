@@ -44,7 +44,6 @@ body{
 }
 
 .container{
-    border: 1px solid red;
     width: 90%;
     max-width: 1200px;
     margin: auto;/*centro del elemento*/
@@ -158,4 +157,212 @@ body{
     text-decoration: none;
     font-weight: bold;
     border-radius: 2em;
+}
+
+.easybank{
+    background-color: var(--ligh-grayish-blue);
+
+}
+
+.easybank_container{
+    text-align: center;
+    padding: 70px 0;
+}
+
+.title{
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--dark-blue);
+}
+
+.easybank_paragraph{
+    line-height: 1.5;
+    margin-top: 1em;
+    margin-bottom: 4em;
+}
+
+.easybank_services{
+    display: grid;
+    gap: 3em;/*espaciado entre elementos*/
+    max-width: 400px;
+    margin: 0 auto;
+
+}
+
+.easybank_icon{
+    display: block;
+    margin: 0 auto;
+    width: max-content;/*significa que el contenido no se va a ajustar en absoluto*/
+}
+
+.img_icon{
+    width: 75px;
+    height: 75px;
+}
+
+.easybank_title{
+    margin: 1em 0;
+    color: var(--dark-blue);
+    font-weight: 400;
+}
+
+.easybank_copy{
+    line-height: 1.5;
+    color: var(--grayish-blue);
+}
+
+.articles{
+    background-color: var(--very-light-gray);
+
+}
+
+.articles_container{
+    padding: 70px 0;
+    text-align: center;
+}
+
+.articles_content{
+    margin-top: 2em;
+    display: grid;
+    gap: 2em;/*espacio entre grid*/
+}
+.articles_article{
+     --img-bg: url(/images/1567497.jpg);
+     width: 100%;
+     max-width: 400px;
+     margin: 0 auto;
+     background-color: #fff;
+     border-radius: 7px;
+     box-shadow: 0 0 3px rgb(0, 0, 0, .2);
+     overflow: hidden;
+     text-align: left;
+}
+/*el elemento numero dos de esa clase tenga los siguientes estilos*/
+.articles_article:nth-of-type(2){
+   
+    --img-bg: url(/images/aprender-fotografia_dest.jpg);
+
+}
+
+
+.articles_article:nth-of-type(3){
+    --img-bg: url(/images/R1-300x250.png)
+}
+
+.articles_article:nth-of-type(4){
+    --img-bg: url(/images/24_rest_api_tips.jpg);
+}
+.article_img{
+    width: 100%;
+    height: 250px;
+    background-image: var(--img-bg);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.articles_txt{
+    padding: 1.5em 1em 2.5em;
+}
+
+.articles_author{
+    color: var(--grayish-blue);
+    font-size: .8rem;
+}
+
+.articles_title{
+    color: var(--dark-blue);
+    font-weight: 400;
+    margin: .7rem 0;
+}
+
+.articles_paragraph{
+    color: var(--grayish-blue);
+    line-height: 1.5;
+}
+
+/*FOOTER*/
+
+#footer{
+    width: 100%;
+    height: 470px;
+    background: rgb(0, 0, 0,0.091);
+    color: black;
+    overflow: hidden;/*los elementos que se salen se oculatan*/
+}
+
+#footer .wrap>div{
+    float: left;
+    width: 320px;
+    height: 370px;
+    margin: 40px;
+    text-align: center;
+    color: black;
+    font-family: 'Trebuchet MS';
+
+}
+
+#footer a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.569);
+    transition: all 300ms;
+}
+
+#footer h5{
+
+    display: block;
+    height: 50px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-family: BebasNeue;
+    font-size: 25px;
+    line-height: 55px;
+    color: black;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+#footer ul{
+    text-align: left;
+    margin: 20px;
+    font-size: 20px;
+
+}
+
+#footer ul li{
+    margin-top: 10px;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+#footer ul li a{
+    display: block;
+    height: 40px;
+    transition: all 300ms;
+}
+
+#footer ul li:hover a{
+    padding-left: 40px;
+    color: black;
+    width: 100%;
+}
+
+#footer iframe{
+    width: 100%;
+    height: 300px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px gray;
+}
+
+#footer img{
+    margin-bottom: 15px;
+
+}
+
+#footer #browsers img{
+    width: 45px;
+}
+
+.cta_nav{
+    display: none;
 }
